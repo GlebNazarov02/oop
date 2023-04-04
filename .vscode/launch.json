@@ -9,6 +9,13 @@
             "name": "Main",
             "request": "launch",
             "mainClass": "calcul.Main",
+            "projectName": "oop_7751e977"
+        },
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "calcul.Main",
             "projectName": "oop-1_ea7d6d5b"
         },
         {

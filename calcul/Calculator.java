@@ -1,16 +1,25 @@
 package calcul;
 
-public class Calculator implements Methods {
+public class Calculator implements Operations{
     private double firstOperand;
     private double secondOperand;
-    private String operatorStr;
+    private String Operation;
 
+    public Calculator(double firstOperand, double secondOperand, String Operation) {
+        this.firstOperand = firstOperand;
+        this.secondOperand = secondOperand;
+        this.Operation = Operation;
+    }
     public double getFirst() {
         return firstOperand;
     }
 
     public double getSecond() {
         return secondOperand;
+    }
+    
+    public String getOperation() {
+        return Operation;
     }
 
     public void setFirstOperand(String operandStr) {
@@ -20,29 +29,24 @@ public class Calculator implements Methods {
     public void setSecondOperand(String operandStr) {
         secondOperand = Double.parseDouble(operandStr);
     }
-
-    public void setOperator(String operatorStr) {
-        this.operatorStr = operatorStr;
+  
+    public double summa() {
+        double summ = firstOperand + secondOperand;
+        return summ;
+    }
+  
+    public double difference() {
+        double diff = firstOperand - secondOperand;
+        return diff;
+    }
+   
+    public double multiply() {
+        double mult = firstOperand * secondOperand;
+        return mult;
     }
 
-    public String getResult() {
-        Operation operation = operation(operatorStr);
-        double res = operation.calculate(firstOperand, secondOperand);
-        return Double.toString(res);
-    }
-
-    private Operation operation(String operatorStr) {
-        switch (operatorStr) {
-            case "+":
-                return (fOp, sOp) -> fOp + sOp;
-            case "-":
-                return (fOp, sOp) -> fOp - sOp;
-            case "*":
-                return (fOp, sOp) -> fOp * sOp;
-            case "/":
-                return (fOp, sOp) -> sOp != 0 ? fOp / sOp : 0;
-            default:
-                return null;
-        }
+    public double devide() {
+        double dev = firstOperand / secondOperand;
+        return dev;
     }
 }

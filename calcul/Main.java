@@ -1,8 +1,6 @@
 package calcul;
 
 import java.util.Scanner;
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
 
 
 
@@ -13,31 +11,19 @@ public class Main {
 
         Scanner scanner = new Scanner(System.in);
 
-        final Pattern operationPattern = Pattern
-
-                .compile("^([-+]?[0-9]{1,}[.,]?[0-9]*)([+\\-*\\/])([0-9]{1,}[.,]?[0-9]*)$");
-
+        
         while (true) {
+            System.out.print("First number: ");
+            double firstOperand = scanner.nextDouble();
+            System.out.print("Operation: ");
+            String Operation = scanner.next();
+            System.out.print("Second number: ");
+            double secondOperand = scanner.nextDouble();
+            Calculation calcculation = new Calculation(firstOperand, secondOperand, Operation);
+            System.out.println(calcculation.operation(Operation));
+            
 
-            String chislo_operator = scanner.nextLine();
-
-            Matcher matcher = operationPattern.matcher(chislo_operator);
-
-            if (matcher.matches()) {
-
-                Calculator calc = new Calculator();
-
-                calc.setFirstOperand(matcher.group(1));
-
-                calc.setOperator(matcher.group(2));
-
-                calc.setSecondOperand(matcher.group(3));
-
-                System.out.println(calc.getResult());
-
-            }
-
-            if (chislo_operator.equals("exit")) {
+            if (scanner.next().equals("exit")) {
 
                 break;
 
