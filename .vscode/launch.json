@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "less3",
+            "request": "launch",
+            "mainClass": "lesson3.less3",
+            "projectName": "oop_7751e977"
+        },
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "lesson3.Main",
+            "projectName": "oop_7751e977"
+        },
+        {
+            "type": "java",
             "name": "Main",
             "request": "launch",
             "mainClass": "calcul.Main",
