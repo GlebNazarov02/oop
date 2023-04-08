@@ -20,12 +20,7 @@ public class Teacher extends People {
     public void addStudGroup(StudGroup StudGroup) {
         StudGroupList.add(StudGroup);
     }
-
-    public void removeStudGroup(StudGroup StudGroup) {
-        StudGroupList.remove(StudGroup);
-
-    }
-
+    
     public List<StudGroup> getStudGroup(){
         return StudGroupList;
     }

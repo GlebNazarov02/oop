@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "dz5.Main",
+            "projectName": "oop_7751e977"
+        },
+        {
+            "type": "java",
             "name": "less3",
             "request": "launch",
             "mainClass": "lesson3.less3",
