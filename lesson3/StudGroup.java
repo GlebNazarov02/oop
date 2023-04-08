@@ -26,13 +26,6 @@ public class StudGroup {
             studentList.add(student);
     }
 
-    public void setTeacher(Teacher teacher) {
-        if (this.teacher != null) {
-            this.teacher.removeStudGroup(this);
-        }
-        this.teacher = teacher;
-    }
-
     public Teacher getTeacher() {
         return teacher;
     }

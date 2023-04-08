@@ -45,7 +45,6 @@ public class less3 {
         System.out.println(StudGroup01);
         System.out.println(StudGroup02);
         System.out.println(StudGroup03);
-        StudGroup01.setTeacher(teacher04);
         System.out.println(StudGroup01);
     }
 }
