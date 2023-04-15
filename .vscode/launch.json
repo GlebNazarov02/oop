@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "UserView",
+            "request": "launch",
+            "mainClass": "pz5.view.UserView",
+            "projectName": "oop_7751e977"
+        },
+        {
+            "type": "java",
             "name": "Main",
             "request": "launch",
             "mainClass": "dz5.Main",
