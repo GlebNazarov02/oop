@@ -1,4 +1,4 @@
-package dz5;
+package dz4;
 
 public abstract class Product1 {
     protected String name;
