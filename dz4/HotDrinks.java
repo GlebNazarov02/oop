@@ -1,4 +1,4 @@
-package dz5;
+package dz4;
 
 public class HotDrinks extends BouttleWater {
     private int temp;
